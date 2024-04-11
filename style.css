@@ -35,7 +35,7 @@ main {
 .app a {
     width: 10em;
     height: 3em;
-    background: rgb(99, 99, 99);
+    background: rgb(30, 30, 30);
     border-radius: 2em;
     text-decoration: none;
     color: rgb(255, 255, 255);
