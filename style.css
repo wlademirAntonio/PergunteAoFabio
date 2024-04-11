@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.app {
+    background: rgb(1, 1, 1);
+    width: 30em;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+.app h1 {
+    color: rgb(255, 255, 255);
+    font-size: 2.5em;
+}
+
+.app p {
+    color: rgb(255, 255, 255);
+    margin-top: 2em;
+}
+
+.app a {
+    width: 10em;
+    height: 3em;
+    background: rgb(30, 30, 30);
+    border: 1em solid rgba(30, 30, 30, 0);
+    border-radius: 2em;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10em;
+}
