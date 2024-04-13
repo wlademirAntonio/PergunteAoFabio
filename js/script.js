@@ -16,6 +16,28 @@ const createMessageSelfElement = (content) => {
     return div
 }
 
+const createMessageOtherElement = (content) => {
+    const div = document.createElement("div")
+    const span = document.createElement("span")
+
+    div.classList.add("message--other")
+    span.classList.add("message--sender")
+
+    div.appendChild(span)
+
+    span.innerHTML = "Fábio"
+    div.innerHTML += content
+
+    return div
+}
+
+const scrollScreen = () => {
+    window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: "smooth"
+    })
+}
+
 const handleSubmit = (event) => {
     event.preventDefault()
 
@@ -31,11 +53,17 @@ const sendMessage = (event) => {
 
     chatInput.value = ""
 
-    const element = createMessageSelfElement(message)
+    const self = createMessageSelfElement(message)
+    const other = createMessageOtherElement("")
 
     if (message != "") {
 
-        chatMessages.appendChild(element)
+        chatMessages.appendChild(self)
+        scrollScreen()
+
+        setTimeout(function() {
+            chatMessages.appendChild(other) 
+            scrollScreen()}, 1000)
 
     }
 
