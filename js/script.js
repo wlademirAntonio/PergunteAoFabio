@@ -7,6 +7,23 @@ const chatForm = document.querySelector(".chat__form")
 const chatInput = document.querySelector(".chat__input")
 const chatMessages = document.querySelector(".chat__messages")
 
+const messageFabio = () => {
+    const rand = Math.floor(Math.random() * 20)
+    var resp = "";
+
+    if (rand == 10) {
+        resp = "Humm raspa de parede"
+    } else if (rand == 3) {
+        resp = "Já pode ou tá cedo?"
+    } else if (rand % 2 == 0) {
+        resp = "Sim";
+    } else if (rand % 2 == 1) {
+        resp = "Não";
+    }
+
+    return resp
+}
+
 const createMessageSelfElement = (content) => {
     const div = document.createElement("div")
 
@@ -51,12 +68,12 @@ const sendMessage = (event) => {
 
     const message = chatInput.value
 
-    chatInput.value = ""
-
-    const self = createMessageSelfElement(message)
-    const other = createMessageOtherElement("")
-
     if (message != "") {
+
+        chatInput.value = ""
+
+        const self = createMessageSelfElement(message)
+        const other = createMessageOtherElement(messageFabio())
 
         chatMessages.appendChild(self)
         scrollScreen()
