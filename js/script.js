@@ -1,5 +1,6 @@
 const entrar = document.querySelector(".entrar")
 const entrarForm = document.querySelector(".entrar__form")
+const insta = document.querySelector(".insta")
 
 const chat = document.querySelector(".chat")
 const chatForm = document.querySelector(".chat__form")
@@ -10,6 +11,7 @@ const handleSubmit = (event) => {
 
     entrar.style.display = "none"
     chat.style.display = "flex"
+    insta.style.display = "none"
 }
 
 entrarForm.addEventListener("submit", handleSubmit)

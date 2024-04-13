@@ -19,6 +19,14 @@ body {
     justify-content: center;
 }
 
+.insta {
+    color: rgb(150, 150, 150);
+    text-decoration: none;
+    bottom: 0;
+    position: absolute;
+    margin-bottom: 10px;
+}
+
 .entrar {
     display: flex;
     flex-direction: column;
