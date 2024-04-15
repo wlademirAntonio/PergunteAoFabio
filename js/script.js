@@ -8,13 +8,17 @@ const chatInput = document.querySelector(".chat__input")
 const chatMessages = document.querySelector(".chat__messages")
 
 const messageFabio = () => {
-    const rand = Math.floor(Math.random() * 20)
+    const rand = Math.floor(Math.random() * 30)
     var resp = "";
 
     if (rand == 10) {
         resp = "Humm raspa de parede"
     } else if (rand == 3) {
         resp = "Já pode ou tá cedo?"
+    } else if (rand == 20) {
+        resp = "A qualquer momento"
+    } else if (rand == 13) {
+        resp = "Isto"
     } else if (rand % 2 == 0) {
         resp = "Sim";
     } else if (rand % 2 == 1) {
