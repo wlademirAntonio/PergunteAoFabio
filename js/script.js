@@ -11,14 +11,18 @@ const messageFabio = () => {
     const rand = Math.floor(Math.random() * 30)
     var resp = "";
 
-    if (rand == 10) {
+    if (rand == 0) {
         resp = "Humm raspa de parede"
     } else if (rand == 3) {
         resp = "Já pode ou tá cedo?"
-    } else if (rand == 20) {
+    } else if (rand == 10) {
         resp = "A qualquer momento"
     } else if (rand == 13) {
         resp = "Isto"
+    } else if (rand == 20) {
+        resp = "Que isso cara"
+    } else if (rand == 23) {
+        resp = "Carlinhos... Meu ídolo"
     } else if (rand % 2 == 0) {
         resp = "Sim";
     } else if (rand % 2 == 1) {
