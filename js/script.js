@@ -29,8 +29,6 @@ const messageFabio = () => {
         resp = "Não";
     }
 
-    console.log(rand)
-
     return resp
 }
 
